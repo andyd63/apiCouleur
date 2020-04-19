@@ -1,10 +1,14 @@
 <?php 
+
+/**
+ * Cette class est la base de mon template de requête sql : SELECT, UPDATE, DELETE, INSERT
+ */
 class myQueryClass
 {
-    private $table;
-    private $conditions;
-    private $order;
-    private $value;
+    private $table; // table séléctionnée
+    private $conditions; // conditions de la requête en array
+    private $order; // order de la requête en array
+    private $value; // valeur des conitions de la requête en array
    
     public function __construct($table,$mesConditions = '',$order = '',$value = ''){
         $this->table = $table;
@@ -54,9 +58,7 @@ class myQueryClass
                 }
             }
         }
-
-
-       
+    
         $requete = $pdo->prepare("SELECT $nameChamps FROM ".$this->table." ".$mesConditions." ".$mesOrder);
         if($this->conditions != ''){
             foreach($this->conditions as $condition ){

@@ -1,9 +1,14 @@
 <?php
-	function bdd()
+
+/**
+ *  fonction pour se connecter à la bdd
+ *
+ * @return void
+ */
+function bdd()
 {
 	try {
 	 $bdd = new PDO('mysql:host=localhost; dbname=apiCouleur', 'root', '');  //local
-	// $bdd = new PDO('mysql:host=db748439476.db.1and1.com; dbname=db748439476', 'dbo748439476', 'jeremycizel'); //  Connexion sur serveur
 	$bdd->exec("SET CHARACTER SET utf8");
        $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	}
