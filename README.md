@@ -15,7 +15,7 @@ Comment installer les dépendances et exécuter le projet?
 Il vous faudra tout suivre les étapes ci-dessous dans l'ordre :
     1- dézipper le dossier
     2- créer une base de données 'apiCouleur'
-    3- insérer dans la base de données, le fichier baseDeDonnee.sql
+    3- insérer dans la base de données, le fichier bdd.sql
     3- changer les identifiants de la connexion à la bdd par les votre dans le fichier : "modeles/mBdd.php"
     4- Le projet est maintenant executable, en local tapez : "localhost/nomdudossier/
     il vous affichera le get couleurs
