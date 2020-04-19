@@ -18,7 +18,7 @@ Pour cela, suivez les étapes ci-dessous dans l'ordre :
     3- insérez dans la base de données, le fichier bdd.sql
     3- changez les identifiants de la connexion à la bdd par les votre dans le fichier : "modeles/mBdd.php"
     4- Le projet est maintenant executable, en local tapez : "localhost/nomdudossier/
-    il vous affichera le get couleurs
+    il vous affichera le get colores
 
 endpoint de couleurs:
 /colores/ : toutes les couleurs avec les informations suivantes: id,name,color
